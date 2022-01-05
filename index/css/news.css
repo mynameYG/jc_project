@@ -1,0 +1,68 @@
+﻿
+/*===============================================
+    搜索条
+=================================================*/
+.news.searchbar{margin-top: 87px;}
+
+
+/*===============================================
+    安博新闻列表
+=================================================*/
+.img-cont-list{margin-top: 0;}
+.img-cont-list li{height: 130px;margin-top: 30px;padding: 40px 35px;background-color: #fff;transition: all 0.5s;box-sizing: content-box}
+.img-cont-list li>a{display:block;height:100%;}
+.img-cont-list li .date{padding: 30px 22px 20px 42px;border-left: 1px solid #dcdcdc;}
+.img-cont-list li .date p{ font-size: 20px;color: #b0b0b0;line-height: 1;}
+.img-cont-list li .date p:first-child{margin-bottom: 20px;font-size: 30px;color: #5f5f5f;font-weight: bold;}
+.img-cont-list li .cont{margin-left: 260px;}
+.img-cont-list li .cont h3{display: inline-block;max-width: 670px;margin: 2px 0 22px;font-size: 20px;color: #333;line-height: 1;transition: color .5s ease-out;}
+.img-cont-list li .cont h3:hover{ color: #c2000b;}
+.img-cont-list li .cont p{ max-width: 610px;font-size: 16px;color: #7f7f7f;line-height: 1.8;}
+.img-cont-list li .imgstyle{display: block;width: 231px;height: 100%;}
+.img-cont-list li:hover{box-shadow: 0px 2px 9px 4px rgba(62, 62, 62, 0.06);transform: translateY(-3px);}
+
+/*===============================================
+    安博党建
+=================================================*/
+.abdj .topimg{width: 100%;height: 205px;padding: 0 0 20px;}
+.abdj .topimg img{width: 100%;height: 100%;}
+.abdj .leftlist{float: left;width: 390px;}
+.abdj .block{background: #fff;border: solid 1px #efefef;padding: 15px;margin-bottom: 20px;}
+.abdj .block .title{margin-bottom: 10px;color: #cc0001;height: 40px;line-height: 40px;font-weight:bold;font-size: 24px;border-bottom: solid 4px #cc0001;padding: 0 10px;}
+.abdj .block .title .more{float: right;font-size: 14px;display: inline-block;margin-right: 10px;line-height: 50px;color: #cc0001;}
+.abdj .djdt ul li{width: 100%;margin-top: 12px;}
+.abdj .djdt ul li img{width: 320px; height: 50px;margin: 0 auto;display: block;}
+.abdj .mainbox a{ color: #333;}
+.abdj .mainbox a:hover{ color: #cc0001;}
+.abdj .ggtz ul,.dzgk ul {padding: 0 15px;}
+.abdj .ggtz ul li,.dzgk ul li {width: 100%;height: 40px;line-height: 40px;font-size: 16px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+.abdj .rightlist{float: left;width: 790px;padding-left: 20px;}
+.abdj .rightlist .djdtlist{padding-bottom: 40px;border: none;height: 890px;}
+.abdj .djdtlist>ul{padding: 0 25px;margin-bottom: 30px;}
+.abdj .djdtlist>ul li{line-height: 55px;height: 55px;padding: 0px 10px;border-bottom: 1px solid #d2d2d2;font-size: 16px;}
+.abdj .djdtlist>ul li p{display: inline-block;width: calc(100% - 130px);}
+.abdj .djdtlist>ul li .time{float: right;}
+
+.abdj .bottom-img{margin-top: 20px;}
+.abdj .bottom-img ul li{float: left;width: 390px;height: 90px;margin-left: 15px;}
+.abdj .bottom-img ul li:first-child{margin-left: 0;}
+.abdj .bottom-img ul li img{height: 100%;}
+/*监督电话和邮箱*/
+.block.jdmodel{font-size: 0;}
+.abdj .block.jdmodel .title{margin-bottom:20px;}
+.jdmodel p{line-height: 50px;position: relative;background: url(../images/abdj-jdbg.jpg) no-repeat center;padding: 0 35px;margin-bottom: 12px;}
+.jdmodel p span{font-size: 20px;font-weight: bold;display: inline-block;vertical-align: middle;}
+.jdmodel p span:first-child{color: #fcef01;padding-right: 12px;}
+.jdmodel p span:last-child{color: #fff;}
+
+.abdj .djdt{height: 370px;}
+.abdj .ggtz{height: 220px;}
+.abdj .dzgk{height: 251px;}
+.abdj .innerdjdtlist{ padding-bottom: 40px;}
+
+
+
+
+
+

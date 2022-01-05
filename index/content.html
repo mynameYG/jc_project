@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+
+		<!-- 判断浏览器及移动端 -->
+		<script src="js/mobile-detect.min.js"></script>
+		<script src="js/browser.js"></script>
+
+		<script type="text/javascript">
+			var url = "/News/Details/ddjs?nid=10854";
+			if (url.indexOf("Preview") < 0) {
+				if (browsermd.mobile() && browsermd.phone()) { //手机版
+					if (url == "/") {
+						url = '/Wap/Home/Index';
+					} else {
+						url = '/Wap' + url.replace(/&amp;/g, '&');
+					}
+					window.location = url;
+				} else {
+
+				}
+			}
+		</script>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no" />
+		<title>晋祠博物馆-著作散文</title>
+		<meta name="renderer" content="webkit">
+		<meta name="force-rendering" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<meta content="晋祠、博物馆" name="Keywords" />
+		<meta name="description" />
+		<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<!--样式表-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/animation.css" />
+		<link rel="stylesheet" type="text/css" href="css/survey.css" />
+		<link rel="stylesheet" type="text/css" href="css/news.css" />
+		<link rel="stylesheet" type="text/css" href="css/service.css" />
+		<link rel="stylesheet" type="text/css" href="css/exhibition.css" />
+		<link rel="stylesheet" type="text/css" href="css/research.css" />
+		<link rel="stylesheet" type="text/css" href="css/collection.css" />
+		<link rel="stylesheet" type="text/css" href="css/activity.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+		<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--搜索框-->
+		<script src="js/colsearch.js" type="text/javascript" charset="utf-8"></script>
+		<!--提示框-->
+		<script src="js/layer.js"></script>
+		<script src="js/scrolltotop.js" type="text/javascript" charset="utf-8"></script>
+		<!-- share css & js -->
+		<link rel="stylesheet" href="css/share.min_2.css">
+
+		<script src="js/social-share.js"></script>
+		<script src="js/qrcode.js"></script>
+
+	</head>
+	<body class="bg">
+
+		<div class="header">
+			<div class="header-box b-white">
+				<div class="header-container">
+					<div class="logo">
+						<img class="logo_init" src="images/logo_init.1a03f445.png">
+						<img class="logo_page" src="images/logo_page.90322f31.png" />
+					</div>
+					<div class="header-nav">
+						<ul>
+							<li class="drophover">
+								<a href="#">首页</a>
+								<span aria-hidden="true" data-toggle="dropdown"></span>
+							</li>
+							<li class="drophover">
+								<a href="#" data-toggle="dropdown">参观</a>
+								<div class="dropdown-menu secondnav">
+									<ul class="clearfix">
+										<li><a href="#">开放时间</a></li>
+										<li><a href="#">票务服务</a></li>
+										<li><a href="#">讲解服务</a></li>
+										<li><a href="#">交通路线</a></li>
+										<li><a href="#">游览须知</a></li>
+									</ul>
+								</div>
+
+							</li>
+							<li class="drophover">
+								<a href="#" data-toggle="dropdown">展览</a>
+								<div class="dropdown-menu secondnav">
+									<ul class="clearfix">
+										<li><a href="#">董寿平美术馆</a></li>
+										<li><a href="#">傅山纪念馆</a></li>
+										<li><a href="#">晋溪书院</a></li>
+										<li><a href="#">临时展览</a></li>
+									</ul>
+								</div>
+
+							</li>
+							<li class="drophover">
+								<a href="#" data-toggle="dropdown">馆藏</a>
+								<div class="dropdown-menu secondnav">
+									<ul class="clearfix">
+										<li><a href="#">古建筑</a></li>
+										<li><a href="#">楹联匾额</a></li>
+										<li><a href="#">碑碣石刻</a></li>
+										<li><a href="#">彩塑壁画</a></li>
+										<li><a href="#">古树名木</a></li>
+										<li><a href="#">书法绘画</a></li>
+										<li><a href="#">青铜器</a></li>
+										<li><a href="#">瓷器</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="drophover">
+								<a href="#" data-toggle="dropdown">文化</a>
+								<div class="dropdown-menu secondnav">
+									<ul class="clearfix">
+										<li><a href="#">学术委员会</a></li>
+										<li><a href="#">著作论文</a></li>
+										<li><a href="#">诗词散文</a></li>
+										<li><a href="#">民俗文化</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="drophover">
+								<a href="#" data-toggle="dropdown">文明</a>
+
+							</li>
+							<li class="drophover">
+								<a href="#" data-toggle="dropdown">资讯</a>
+								<div class="dropdown-menu secondnav">
+									<ul class="clearfix">
+										<li><a href="#">通知公告</a></li>
+										<li><a href="#">资讯动态</a></li>
+										<li><a href="#">晋祠党建</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="drophover">
+								<a href="#" data-toggle="dropdown">关于</a>
+								<div class="dropdown-menu secondnav">
+									<ul class="clearfix">
+										<li><a href="#">晋祠综述</a></li>
+										<li><a href="#">机构设置</a></li>
+										<li><a href="#">大事纪要</a></li>
+										<li><a href="#">员工风采</a></li>
+										<li><a href="#">馆长信箱</a></li>
+										<li><a href="#">联系我们</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="search">
+						<span class="iconfont icon-tubiao1"></span>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="totop" id="totop"></div>
+
+		<!--访问-->
+		<input type="hidden" id="channelno" value="ddjs" />
+		<input type="hidden" id="channelname" value="道德建设" />
+		<input type="hidden" id="userid" value="0" />
+		<input type="hidden" id="username" value="访客" />
+		<script src="js/sata.js" type="text/javascript"></script>
+		<script src="js/header.js" type="text/javascript"></script>
+		<script>
+			//注销
+			function Logout() {
+				$.ajax({
+					url: '/AjaxAccount/LogOut',
+					type: 'POST',
+					success: function() {
+						location.reload();
+					}
+				});
+			}
+		</script>
+		<div class="innercont">
+			<div class="allcenter">
+				<!-- 面包屑 -->
+				<div class="breadcrumb">
+					<ul>
+						<li><a href="#">首页</a></li>
+
+						<li><i>»</i><a href="#">文化</a></li>
+						<li><i>»</i><a href="#">著作散文</a></li>
+						<li><i>»</i><a>内容</a></li>
+					</ul>
+
+				</div>
+
+				<!-- 一级标题 -->
+				<!-- 
+
+				<div class="maintitle">
+					<ul>
+						<li id="cszl">文明创建</li>
+					</ul>
+					
+				</div>
+				-->
+				<div class="beautydetail">
+
+
+					<div class="maindetail">
+						<div class="title">
+							<h1>院领导班子召开深化“三个以案”警示教育民主生活会征求意见座谈会</h1>
+							<h2></h2>
+						</div>
+						<div class="tip"><span>来源：晋祠博物馆</span><span>作者：晋祠博物馆</span><span>发布时间：2020/06/05</span><span>浏览次数：10</span></div>
+						<div class="cont">
+							<p style="text-align: left; text-indent: 2em;">为开好深化“三个以案”警示教育民主生活会，我院于6月4日上午在一楼新安江厅召开院领导班子民主生活会征求意见座谈会，院党委书记、院长胡敏，院纪委书记、副院长张钟云，院党委副书记、副院长陈浩及各部室代表共20人参加会议。</p>
+							<p><img title="院领导班子召开深化“三个以案”警示教育民主生活会征求意见座谈会_副本.png" alt="院领导班子召开深化“三个以案”警示教育民主生活会征求意见座谈会_副本.png" src="picture/6372696328446358295313863.png" /></p>
+							<p style="text-align: left; text-indent: 2em;">座谈会上，代表们联系院领导班子在政治、工作、管理、作风上的表现，从思想政治、担当尽责、为民宗旨、勤政廉政四个方面开诚布公的提出意见和建议，并在建立博物馆事业发展长远规划、打破部室之间的资源壁垒、提高馆藏资源的利用率、加强网上意识形态阵地管理、创新党员活动和学习方式、增加业务知识培训方式、OA系统提升改造、提高员工福利待遇等方面存在的问题献言献策，积极讨论。</p>
+							<p style="text-align: left; text-indent: 2em;">院班子成员对会上提出的问题一一进行了回应，并对大家开诚布公提意见，谋划未来求发展表示感谢，希望大家共同努力，贡献集体的智慧，共同建设安徽博物院的美好未来。</p>
+						</div>
+					</div>
+
+					<!--上一篇 下一篇-->
+					<div class="entry-meta">
+                        <ul class="article-prevnext">
+                            <li class="col-md-6">
+                                <span>上一篇 ：</span>
+                                <a href="#">晋祠博物馆召开全体员工动员大会晋祠博物馆召开全体员工动员大会晋祠博物馆召开全体员工动员大会晋祠博物馆召开全体员工动员大会</a>
+                            </li>
+                            <li class="col-md-6">
+                                <span>下一篇 ：</span>
+                                <a href="#">晋祠博物馆召开全体员工动员大会</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<footer data-v-00b1a7d6="" class="footer slide-footer" style="margin-top: 0px;">
+			<div class="container">
+				<h2><img src="images/dlogo.png" alt=""></h2>
+				<div class="footer-c">
+					<address>
+						<a href="#" class="">网站地图</a>
+						<a href="#" class="">相关链接</a>
+						<a href="#" class="">版权声明</a>
+						<a href="#" class="">联系我们</a>
+					</address>
+					<address class="copyright">
+						<a href="#" target="_blank">晋ICP备05004114号-1</a> | <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=14011002000148"
+						 target="_blank" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://www.chinajinci.com/statics/images/batb.png"
+							 style="float:left;padding-right: 5px;" />晋公网安备14011002000148号</a>| 晋祠博物馆版权所有</a>
+					</address>
+					<address>
+						<a href="#" target="_blank">技术支持：山西云汉文化传媒有限公司</a>
+					</address>
+				</div>
+
+				<div class="footer-cr">
+
+					<address>
+						<script type="text/javascript">
+							document.write(unescape(
+								"%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/06/113/0000/41035133/CA061130000410351330003.js' type='text/javascript'%3E%3C/script%3E"
+							));
+						</script>
+					</address>
+
+
+
+				</div>
+				<div class="footer-r">
+
+					<address> <img src="images/fwh.jpg" width="80" height="80">微信服务号</address>
+					<address><img src="images/dyh.jpg" width="80" height="80">微信订阅号</address>
+
+
+				</div>
+
+
+			</div>
+
+
+		</footer>
+		<script>
+			function openNavbar() {
+				$(".navbar").fadeIn(300);
+				$(document.body).css("overflow", "hidden");
+			}
+
+			function closeNavbar() {
+				$(".navbar").fadeOut(300);
+				$(document.body).css("overflow", "auto");
+			}
+		</script>
+	</body>
+</html>
+<script>
+	$(function() {
+		$(".maindetail .cont video").css("width", 800).css("height", 600).css("background-color", "#000").attr("controls",
+			"controls").attr("controlslist", "nodownload");
+		$($(".maindetail .cont video")[0]).attr("autoplay", true).attr("preload", true);
+
+		$(".maindetail .cont audio").css("width", 800).css("height", 100).attr("controls", "controls").attr("controlslist",
+			"nodownload");
+		$($(".maindetail .cont audio")[0]).attr("autoplay", true).attr("preload", true);
+	});
+
+	// 头部二级栏目宽度
+	$(".drophover .secondnav").width($(window).width());
+</script>

@@ -1,0 +1,217 @@
+﻿@charset "utf-8";
+
+/*===============================================
+    典藏推荐
+=================================================*/
+.col-recommand-image{position: relative;overflow: hidden;font-size: 0;background: no-repeat center;}
+.col-recommand-image a{position:relative;display:block;z-inde:1;}
+.col-recommand-image img{width:100%;}
+.col-recommand{position: relative;height: 468px;overflow: hidden;font-size: 0;background: no-repeat center;}
+/*底图*/
+.col-recommand>i{position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;z-index: 0;transition: all 1s ease-out;background: no-repeat top center / 100% auto;}
+/*标题*/
+.col-recommand>span{height: 108px;background: no-repeat left center;display: block;position: absolute;width: 100%;left: 0;top: 0;}
+.col-recommand a{display:block;}
+.col-recommand img{width:100%;}
+.col-recommand .cont{position: absolute;font-size: 16px;color: #fff;left: 58px;text-align: justify;}
+.col-recommand .cont p{line-height: 1.9;}
+.col-recommand .cont p span{ padding: 0 5px;color: #cfa972;cursor: pointer;transition: .3s color ease-in-out;}
+.col-recommand .cont p span:hover{ color: #e0c59d;}
+.col-recommand .general{ position: relative;z-index: 2;transition: .5s all ease-in;}
+
+.col-recommand .total{ position: relative;display: table;height: 100%;padding: 0 60px;font-size: 16px;color: #fff;line-height: 1.9;opacity: 0;z-index: 1;}
+.col-recommand.tt .total{transition: all .6s ease-out .5s;}
+.col-recommand .total .text{ display: table-cell;vertical-align: middle;}
+.col-recommand .total .close{position:absolute;right:15px;top:15px; width:40px;height:40px;background: url(../images/navbar-close.png) no-repeat center /contain;cursor: pointer;transition: all .2s linear;}
+.col-recommand .total .close:hover{ transform: rotate(180deg);}
+.col-recommand.tt>i{ filter: blur(5px);-webkit-filter: blur(5px);}
+
+
+.col-recommand.col-bronze>i{ background-image: url(../images/choice-bronze.jpg) ;}
+.col-recommand.col-bronze .cont{top: 255px;width: 720px;text-shadow: #000 0.1em 0.1em 0.2em;}
+.col-recommand.col-bronze>span{background-image: url(../images/choice-bronze-title.png);background-position-x: 50px;top: 107px;}
+.col-recommand.col-ceramics>i{ background-image: url(../images/choice-ceramics.jpg) ;}
+.col-recommand.col-ceramics .cont{top: 200px;width: 680px;text-shadow: #b29f7d 0.1em 0.1em 0.2em;}
+.col-recommand.col-ceramics>span{background-image: url(../images/choice-ceramics-title.png);background-position-x: 54px;top: 84px;}
+.col-recommand.col-painting>i{ background-image: url(../images/choice-painting.jpg) ;}
+.col-recommand.col-painting .cont{top: 240px;width: 760px;text-shadow: #a68258 0.1em 0.1em 0.2em;}
+.col-recommand.col-painting>span{background-image: url(../images/choice-painting-title.png);background-position-x: 60px;top: 90px;}
+.col-recommand.col-pyl>i{ background-image: url(../images/choice-pyl.jpg) ;}
+.col-recommand.col-pyl .cont{top: 240px;width: 625px;text-shadow: #4d6257 0.1em 0.1em 0.2em;}
+.col-recommand.col-pyl>span{background-image: url(../images/choice-pyl-title.png);background-position-x: 49px;top: 84px;}
+.col-recommand.col-jyys>i{ background-image: url(../images/choice-jyys.jpg) ;}
+.col-recommand.col-jyys .cont{top: 230px;width: 485px;}
+.col-recommand.col-jyys>span{background-image: url(../images/choice-jyys-title.png);background-position-x: 44px;top: 105px;}
+.col-recommand.col-hzdk>i{ background-image: url(../images/choice-hzdk.jpg) ;}
+.col-recommand.col-hzdk .cont{top: 230px;width: 585px;}
+.col-recommand.col-hzdk>span{background-image: url(../images/choice-hzdk-title.png);background-position-x: 43px;top: 107px;}
+.col-recommand.col-gjsb>i{ background-image: url(../images/choice-gjsb.jpg) ;}
+.col-recommand.col-gjsb .cont{top: 250px;width: 500px;}
+.col-recommand.col-gjsb>span{background-image: url(../images/choice-gjsb-title.png);background-position-x: 54px;top: 84px;}
+.col-recommand.col-qmyjq>i{ background-image: url(../images/choice-qmyjq.jpg) ;}
+.col-recommand.col-qmyjq .cont{top: 240px;width: 585px;}
+.col-recommand.col-qmyjq>span{background-image: url(../images/choice-qmyjq-title.png);background-position-x: 47px;top: 122px;}
+.col-recommand.col-gswhs>i{ background-image: url(../images/choice-gswhs.jpg) ;}
+.col-recommand.col-gswhs .cont{top: 220px;width: 675px;color: #483015;text-shadow: #efe2ca 0.1em 0.1em 0.2em;}
+.col-recommand.col-gswhs>span{background-image: url(../images/choice-gswhs-title.png);background-position-x: 54px;top: 84px;}
+.col-recommand.col-wfsb>i{ background-image: url(../images/choice-wfsb.jpg) ;}
+.col-recommand.col-wfsb .cont{top: 195px;width: 710px;color: #312f30;text-shadow: #e6e2de 0.1em 0.1em 0.2em;}
+.col-recommand.col-wfsb>span{background-image: url(../images/choice-wfsb-title.png);background-position-x: 55px;top: 58px;}
+
+
+@keyframes scaleimg {
+    0%{ transform: scale(1, 1);}
+    50%{transform: scale(1.05, 1.05);}
+    100%{ transform: scale(1, 1);}
+}
+@-webkit-keyframes scaleimg {
+    0%{ transform: scale(1, 1);}
+    50%{transform: scale(1.05, 1.05);}
+    100%{ transform: scale(1, 1);}
+}
+@-moz-keyframes scaleimg {
+    0%{ transform: scale(1, 1);}
+    50%{transform: scale(1.05, 1.05);}
+    100%{ transform: scale(1, 1);}
+}
+
+/*===============================================
+    典藏分类
+=================================================*/
+.col-sort{}
+.col-sort ul{font-size:0;margin-top: -30px;}
+.col-sort li{display: inline-block;width: 251px;height: 310px;position:relative;margin-right: 65px;background:url(../images/collistbg.png) no-repeat center;margin-top: 30px;transition: all .3s ease;}
+.col-sort li:nth-child(4n){ margin-right: 0;}
+.col-sort li a{display: block;height: 100%;}
+.col-sort li:before{content:"";background-image:url(../images/collistbgactive.png);}
+.col-sort li p{font-size: 24px;position:absolute;left: 14px;top: 16px;color: #8f6e43;width: 28px;transform: scale(0.8);transition:all .6s ease 0s;z-index:10;line-height: 22px;}
+.col-sort li i{position:absolute;transform: scale(0.9);transition: all .6s ease 0s;z-index: 1;top: 0;left: 0;width:100%;}
+.col-sort li i img{max-width:100%;}
+.col-sort li:hover{background-image:url(../images/collistbgactive.png);}
+.col-sort li:hover p{transform: scale(1) translate(102px,12px);}
+.col-sort li:hover i{transform: scale(1);transform: translateY(40px);}
+
+/*===============================================
+    典藏列表
+=================================================*/
+.col-list{min-height: 500px;margin:-30px -24px 0 0;font-size: 0;}
+.col-list li{position: relative;display: inline-block;width: 258px;margin-right: 24px;margin-top:30px;padding: 12px;background-color: #ffffff;box-shadow: -1px 1px 8px 1px rgba(0, 0, 0, 0.15);transition:all 0.5s;}
+.col-list .imgstyle{display: block;height: 283px;}
+.col-list h3{display: inline-block;max-width: 92%;font-size: 16px;color: #313131;line-height: 50px;transition: color .5s ease-out;}
+.col-list h3:hover{ color: #9e7b4b;}
+.col-list .three-d{top: 22px;right: 21px;}
+.col-list li:hover{transform:translateY(-3px);}
+.col-list.mt{ margin-top: 0;}
+
+/*===============================================
+	特别推荐列表
+=================================================*/
+.speciallist{margin-right:-30px;margin-top: -30px;}
+.speciallist li{display: inline-block;width: 585px;margin: 30px 30px 0 0;}
+.speciallist li img{width: 100%;}
+.speciallist li p{height: 40px;line-height: 40px;font-size: 16px;color: #313131;text-indent: 10px;}
+.speciallist li:hover p {color: #9e7b4b;}
+/*捐赠园地*/
+.donatlist{margin-right: 0;}
+.donatlist li{ width: 100%;display: block;margin-right: 0;}
+
+/*===============================================
+	典藏详情
+=================================================*/
+.col-detail{width: 100%;}
+.col-detail .detail{height: 550px;position: relative;}
+.col-detail .detail > .imgstyle{width: 500px;height: 100%;}
+.col-detail .detail > .imgstyle .three-d{top: 110px;right: 22px;width: 47px;height: 47px;}
+.col-detail .detail > .imgstyle .enlarge{top: 32px;right: 22px;}
+.col-detail .detail .cont{width: 640px;height: 100%;margin-left: 60px;position: relative;}
+.col-detail .detail .cont >h3{margin-bottom: 20px;font-size: 26px;color: #313131;line-height: 1.2;}
+/*查看 收藏 分享*/
+.col-detail .status{height:50px;border-bottom: 1px solid #a0a0a0;/* margin-right: -40px; */}
+.col-detail .status li{float: left;margin-right: 30px;line-height: 40px;}
+.col-detail .status li i{display: inline-block;width: 24px;height: 20px;vertical-align: middle;background: url(../images/status.png);}
+.col-detail .status li span{padding-left: 7px;font-size: 14px;color: #aaa;vertical-align: middle;}
+.col-detail .status li.collect,.col-detail .status li.favorite{ cursor: pointer;}
+.col-detail .status li.viewed i{background-position-x: 0;}
+.col-detail .status li.collect i{background-position-x: -24px;}
+.col-detail .status li.favorite i{background-position-x: -48px;}
+.col-detail .status li.share i{background-position-x: -72px;}
+.col-detail .status li.share span{ margin-right: 10px;}
+.col-detail .status li.share .social-share{ display: inline-block;vertical-align: middle;}
+.col-detail .status li.collect:hover i,.col-detail .status li.collect.active i{background-position-y: -20px;}
+.col-detail .status li.collect:hover span,.col-detail .status li.collect.active  span{ color: #e8776c;}
+.col-detail .synopsis{height: 264px;margin-top: 20px;overflow-y: auto;color: #585858;padding-right: 15px;text-align: justify;}
+.col-detail .synopsis .pbox{font-size: 16px;margin-bottom:5px;overflow: hidden;}
+.col-detail .synopsis .pbox span{float: left;}
+.col-detail .synopsis .pbox p{margin-left: 53px;}
+.col-detail .synopsis .intro{padding-top: 10px;font-size: 16px;line-height: 28px;}
+.col-detail .synopsis .intro img{ display: none;}
+.col-detail .detail .imglistbox{position: absolute;bottom: 0;left: -17px;width: 500px;font-size: 0;}
+.col-detail .detail .imglistbox .imglist{height: 100%;}
+.col-detail .detail .imglistbox .imglist .owl-controls .owl-buttons{position: absolute;bottom: 0;right: -142px;}
+.col-detail .detail .imglistbox .imglist .owl-controls .owl-buttons div{width: 34px;height: 34px;border-radius: 50%;background: no-repeat center #e6e6e7;position: absolute;bottom: 0;}
+.col-detail .detail .imglistbox .imglist .owl-controls .owl-buttons div.owl-prev{right: 50px;background-image: url(../images/imglist-prev.png);}
+.col-detail .detail .imglistbox .imglist .owl-controls .owl-buttons div.owl-next{right: 0;background-image: url(../images/imglist-next.png);}
+.col-detail .detail .owl-carousel .owl-item{text-align: center;}
+.col-detail .detail .imglistbox .item{position: relative;display: inline-block;cursor: pointer;}
+.col-detail .detail .imglistbox .item:before{content: "";position: absolute;top: 5px;left: 5px;width: 123px;height: 135px;border: 3px solid #fff;box-shadow: 0 0 0 4px #fff, 0 0 0 5px #fff;z-index: 1;box-sizing: border-box;}
+.col-detail .detail .imglistbox .item.active:before{box-shadow: 0 0 0 4px #fff, 0 0 0 5px #e2d7bb;}
+.col-detail .detail .imglistbox .imgstyle{display:block;width: 132px;height: 145px;}
+
+/*===============================================
+	相关文物
+=================================================*/
+.col-detail .relevant{padding-top: 70px;color: #313131;}
+.col-detail .relevant .relevant-title{margin-bottom:30px;}
+.col-detail .relevant .relevant-title>h3{display:  inline-block;font-size: 24px;}
+.col-detail .relevant .types{display:  inline-block;margin-left: 50px;font-size: 0;vertical-align: super;}
+.col-detail .relevant .types li{display: inline-block;height: 24px;margin: 0 25px;border: 1px solid #ccc;transition: all .5s ease;}
+.col-detail .relevant .types li.active,.col-detail .relevant .types li:hover{background-color: #9e7b4b;border-color: #9e7b4b;}
+.col-detail .relevant .types li.active a,.col-detail .relevant .types li:hover a{color: #fff;}
+.col-detail .relevant .types li a{padding: 0 18px;font-size: 16px;color: #565656;line-height: 24px;display: block;}
+.col-detail .relevant .list{position:  relative;height: 450px;}
+.col-detail .relevant .list .col-list{max-height: 405px;min-height:  inherit;}
+.col-detail .relevant .list > a{position: absolute;bottom: 0;right: 0;}
+.col-detail .relevant .list > a:hover span{color: #9e7b4b;}
+.col-detail .relevant .list > a span{font-size: 16px;color: #313131;}
+
+
+/*===============================================
+	捐赠园地
+=================================================*/
+.donation{background: url(../images/donation-bg.jpg) repeat-y center;padding-bottom: 80px;}
+.donation .banner{font-size: 0;}
+.donation .banner img{ max-width: 100%;height: auto;}
+.donation .menu{height: 134px;background: url(../images/donation-t-bg.jpg);overflow: hidden;}
+.donation .menu ul{width: 820px;margin: 24.5px auto;font-size: 0;text-align: center;}
+.donation .menu ul li{display: inline-block;margin: 0 60px;}
+.donation .menu ul li a{ display: block;width: 85px;height: 85px;background: url(../images/donation-menu.png);}
+.donation .menu ul li a.introduce{ background-position-x: 0;}
+.donation .menu ul li a.story{ background-position-x: -85px;}
+.donation .menu ul li a.activity{ background-position-x: -170px;}
+.donation .menu ul li a.cul-relic{ background-position-x: -255px;}
+
+.donation .donation-cont{ width: 100%;}
+.donation .donation-cont > .title{display: inline-block;width: 111px;height: 28px;padding-top: 30px;background: url(../images/donation-title.png) no-repeat center bottom;margin-bottom: 20px;}
+.donation .donation-cont > .title.t-introduce{background-position-x: 0;}
+.donation .donation-cont > .title.t-story{background-position-x: -111px;}
+.donation .donation-cont > .title.t-activity{background-position-x: -222px;}
+.donation .donation-cont > .title.t-cul-relic{background-position-x: -333px;}
+.donation-introduce p,.donation .donation-cont > p{/* margin: 20px 0 0; */color: #313131;font-size: 20px;line-height: 2;}
+.donation .donation-cont > p img{ max-width: 100%;height: auto;}
+.donation .donation-cont .tc{ height: 80px;line-height: 50px;}
+
+.donation .donation-introduce{background: url(../images/donation-t-bg.jpg) repeat-y center;overflow: hidden;}
+.donation .donation-cont>h3{margin-top: 10px;padding: 50px 0 15px;color: #861110;font-size: 26px;line-height: 35px;}
+.donation .donation-cont.hsj > h3{color: #387e00;}
+
+.donation .donation-introduce .imgstyle{ width: 316px;height: 435px;}
+.donation-introduce p{ margin-left: 380px;}
+.donation .donation-introduce .clearfix{ margin-bottom: 45px;}
+
+/*===============================================
+    特别推荐
+=================================================*/
+.col-sp-recommend{position: relative;width: 100%;overflow: hidden;z-index: 1;}
+.col-sp-recommend .box{position: relative;top: 0;left: 50%;margin-left: -960px;font-size: 0;}
+.col-sp-recommend img{ max-width: 100%;height: auto;}
+ .col-sp-recommend .allcenter{position: absolute;top: 0;left: 50%;margin-left: -600px;z-index: 999;}

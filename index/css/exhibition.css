@@ -1,0 +1,81 @@
+﻿@charset "utf-8";
+
+.exhibition-new h3,.exhibition-permanent h3,.exhibition-review h3{font-size: 16px;}
+/*===============================================
+    新展推介
+=================================================*/
+.exhibition-new,.exhibition-permanent,.exhibition-review{}
+.exhibition-new {margin-top:-30px;}
+.exhibition-new li{height: 360px;margin-top: 30px;}
+.exhibition-new li .imgstyle{display: block;width: 533px;height: 100%;}
+.exhibition-new li .cont{position: relative;height: 100%;margin-left: 560px;}
+.exhibition-new li .cont .appointment{ bottom: 0;right: 103px;}
+.exhibition-new li .cont .price{ color: #ff0000;}
+.exhibition-new li .cont.right{margin-left: 0;margin-right: 560px;}
+.exhibition-new li h3{margin-bottom: 8px;color: #9e7b4b;line-height: 1.5;max-height: 48px;overflow: hidden;}
+.exhibition-new li p{font-size: 14px;color: #898989;line-height: 1.8;}
+.exhibition-new li .detail{margin-top: 15px;text-indent: 2em;color: #626161;font-size: 14px;}
+.exhibition-new li .btnbox{position:absolute;right:0;bottom:0;width:100%;text-align:right;height: 33px;font-size: 0;}
+.exhibition-new li .btnbox a{padding: 6px 16px;font-size: 14px;color: #fff;line-height: 1;border: 1px solid #cda854; background: #cda854;transition: opacity .3s ease;margin-left:10px;}
+.exhibition-new li .btnbox a:hover{ opacity: 0.8;}
+
+/*===============================================
+    常设展览
+=================================================*/
+.exhibition-permanent{margin: -22px -22px 0 0;}
+.exhibition-permanent li{display: inline-block;width: 532px;height: 290px;margin: 22px 22px 0 0;padding: 25px 28px;background: url(../images/exhibition-permanent-bg.png);}
+.exhibition-permanent li>a{display:block;height:100%;}
+.exhibition-permanent .imgstyle{display: block;width: 260px;height: 100%;}
+.exhibition-permanent p{margin-left: 45px;font-size: 16px;color: #313131;line-height: 1.9;text-indent: 2em;text-align: justify;}
+.exhibition-permanent h3{position: relative;top: 8px;right: 8px;width: 41px;padding: 8px 0;color: #434343;line-height: 41px;background: url(../images/exhibition-middle.png) repeat-y;font-size: 18px;}
+.exhibition-permanent h3 span{max-height: 264px;}
+.exhibition-permanent h3:before{content: "";position: absolute;top: -8px;left: 0;width: 41px;height: 8px;background: url(../images/exhibition-top.png);}
+.exhibition-permanent h3:after{ content: "";position: absolute;bottom: -7px;left: 0;width: 41px;height: 7px;background: url(../images/exhibition-bottom.png);}
+
+/*===============================================
+    展览回顾
+=================================================*/
+.exhibition-review{margin-right: -25px;margin-top: -30px;font-size: 0;}
+.exhibition-review li{width: 383px;margin: 30px 25px 0 0;display: inline-block;vertical-align: text-top;height: 349px;position: relative;}
+.exhibition-review .imgstyle{display: block;width: 100%;height: 188px;}
+.exhibition-review h3{height: 48px;margin: 10px 0 5px;color: #9e7b4b;line-height: 1.5;overflow: hidden;}
+.exhibition-review p{font-size: 15px;color: #626161;line-height: 1.6;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.exhibition-review li .btnbox{position:absolute;right: 8%;top: 155px;text-align:right;height: 50px;font-size: 0;z-index: 1;}
+.exhibition-review li .btnbox a{margin-left:10px;}
+.exhibition-review li .btnbox a:hover{ opacity: 0.8;}
+.exhibition-review li .btnbox .question{display: inline-block;width: 50px;height: 50px;background: url(../images/question.png) no-repeat center /100% auto;}
+
+/*===============================================
+    常设展览-详情页
+=================================================*/
+.exhib-permanent{ color: #474747;}
+.exhib-permanent .banner{position: relative;font-size: 0;}
+.exhib-permanent .banner .btnbox{position: absolute;right: 35px;width: 70px;bottom: 30px;}
+.exhib-permanent .banner .btnbox a{margin-top: 30px;display: block;}
+.exhib-permanent .banner .btnbox a div{width: 75px;height: 70px;background: no-repeat center /100% auto;display: inline-block;}
+.exhib-permanent .banner .btnbox a div.panorama{background-image: url(../images/panorama.png);background-position-y: 5px;}
+.exhib-permanent .banner .btnbox a div.question{background-image: url(../images/question.png);}
+.exhib-permanent .btnbox a:hover{ opacity: 0.8;}
+.exhib-permanent .banner img{ max-width: 100%;height: auto;}
+.exhib-permanent h3{margin: 34px 0;font-size: 30px;line-height: 1;}
+.exhib-permanent .cont p{ font-size: 16px;line-height: 2;}
+.exhib-permanent .cont img{ display: none;}
+.exhib-permanent >ul{margin-right: -30px;font-size: 0;margin-top: -30px;}
+.exhib-permanent >ul li{display: inline-block;margin-right: 30px;margin-top: 30px;}
+.exhib-permanent >ul li .imgstyle{width: 380px;height: 260px;}
+.exhib-permanent >ul li p{font-size:16px;text-align:center;line-height: 40px;color: #474747;}
+
+/*===============================================
+    新展推介-详情页
+=================================================*/
+.exhib-new{ color: #474747;}
+.exhib-new .banner{text-align:center;}
+.exhib-new .banner img{ max-width: 100%;height: auto;}
+.exhib-new>h3{font-size: 26px;line-height: 1;margin-bottom: 30px;}
+.exhib-new h3.t{ margin: 60px 0 15px;padding-bottom: 20px;border-bottom: 2px solid #bfbfbf;}
+.exhib-new>p,.exhib-new .intro p,.exhib-new .intro span{ font-size: 16px;line-height: 2;}
+.exhib-new .intro{ margin-bottom: 40px;}
+.exhib-new >ul{margin-right: -30px;font-size: 0;margin-top: -30px;}
+.exhib-new >ul li{display: inline-block;margin-right: 30px;margin-top: 30px;}
+.exhib-new >ul li .imgstyle{width: 380px;height: 260px;}
+.exhib-new >ul li p{font-size:16px;text-align:center;line-height: 40px;color: #474747;}

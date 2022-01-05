@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="renderer" content="webkit">
+		<title>晋祠博物馆官方网站-山西·太原</title>
+		<meta name="keywords" content="晋祠博物馆" />
+		<meta name="description" content="晋祠博物馆" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/fullpage.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/hover.css"/>
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/> -->
+		<!-- <style type="text/css">
+			.myContent {
+				height: 300px;
+			}
+		</style> -->
+		
+			<div class="section home" id="section0">
+				<div class="focus">
+					<div>
+						<a id="wrap-banner" href="javascript:void(0);"></a>
+						<ul>
+							<li>
+								<a href="#" target="_blank" style="background:url(images/1.jpg) no-repeat center;background-size:100%;cursor:pointer;"></a>
+							</li>
+							<li>
+								<a href="#" target="_blank" style="background:url(images/2.jpg) no-repeat center;background-size:100%;cursor:pointer;"></a>
+							</li>
+							<li>
+								<a href="#" target="_blank" style="background:url(images/3.jpg) no-repeat center;background-size:100%;cursor:pointer;"></a>
+							</li>
+							<!-- <li>
+								<a href="#" target="_blank" style="background:url(images/4.jpg) no-repeat center;background-size:100%;cursor:pointer;"></a>
+							</li>
+							<li>
+								<a href="#" target="_blank" style="background:url(images/5.jpg) no-repeat center;background-size:100%;cursor:pointer;"></a>
+							</li>
+							<li>
+								<a href="#" target="_blank" style="background:url(images/6.jpg) no-repeat center;background-size:100%;cursor:pointer;"></a>
+							</li>
+							<li>
+								<a href="#" target="_blank" style="background:url(images/7.jpg) no-repeat center;background-size:100%;cursor:pointer;"></a>
+							</li> -->
+						
+						</ul>
+						<div class="nav">
+							<i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+						</div>
+					</div>
+					<div class="prev"><a href="javascript:;"></a></div>
+					<div class="next"><a href="javascript:;"></a></div>
+				</div>
+		
+
+			
+<style>
+	/* @-webkit-keyframes shakeY {
+		0%,to {
+			-webkit-transform: translateY(0);
+			transform: translateY(0)
+		}
+		
+		10%,30%,50%,70%,90% {
+			-webkit-transform: translateY(-5px);
+			transform: translateY(-5px)
+		}
+		
+		20%,40%,60%,80% {
+			-webkit-transform: translateY(5px);
+			transform: translateY(5px)
+		}
+	}
+	
+	@keyframes shakeY {
+		0%,to {
+			-webkit-transform: translateY(0);
+			transform: translateY(0)
+		}
+	
+		10%,30%,50%,70%,90% {
+			-webkit-transform: translateY(-5px);
+			transform: translateY(-5px)
+		}
+	
+		20%,40%,60%,80% {
+			-webkit-transform: translateY(5px);
+			transform: translateY(5px)
+		}
+	} */
+</style>
+<!-- E 左下角按钮 -->
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <script src="js/fullpage.js" type="text/javascript" charset="utf-8"></script> -->
+		<script src="js/jquery.mchange.zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.transit.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <script src="js/mousefollow.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/jquery.menu-aim.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jssor.slider.mini.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script> -->
+		<script>
+		// 轮播图启动
+				$('.focus').height($(window).height())
+				$('.home .focus li').mChange({
+					auto: 1, //是否自动播放,1为自动,0为手动
+					arrow: 1, //是否反转箭头,1为点击左侧向右滚动,0则相反
+					speed: 1000, //效果速度,大于0.3
+					time: 4000, //周期时间，大于1
+					nav: $('.home .focus .nav i'), //导航
+					nave: "click", //导航事件
+					navs: 0, //导航滚动
+					prev: ".home .focus .prev a", //上一个
+					next: ".home .focus .next a", //下一个
+					cycle: 1, //是否循环
+					mousestop: 0, //是否鼠标划入停止
+					mousewheel: 0, //是否开启滚轮事件
+					animates: function(idx) {} //自定义函数
+				});
+
+		</script>
+
+
+		$mzusername = 'defultuser'.$gmuser_id;
+
+        if ($gmuser) { 
+           $loginstate = $this->auth->direct($gmuser['id']); 
+            if ($loginstate) {
+                $this->success('登陆成功，立即跳转', '/index/user/index', ['code:1']);
+            } else {
+                $this->error("登录失败");
+            }
+        } else { 
+            $register = $this->auth->register($mzusername, '', '', $gmuser_phone, [ 'avatar' => $gmuser_avatar, 'gender' => $gmuser_gender ]);
+            if ($register) {
+                $mzuserid = $this->auth->id;
+                $data = ['id' => $mzuserid, 'gmid' => $gmuser_id];
+                Db::name('gm')->data($data)->insert();
+                $this->success('修改成功');
+            } else {
+                $this->error($this->auth->getError(), null, ['token' => $this->request->token()]);
+            }
+        }
